@@ -7,6 +7,9 @@
 html,
 body {
     height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 img {
@@ -43,10 +46,11 @@ h6 {
 
 /* end */
 .header {
-    background-color: magenta;
     border-bottom: 2px solid #FFFFFF;
     font-size: 16px;
     line-height: 1.13;
+    width: 100%;
+    position: absolute;
 
 }
 
@@ -60,7 +64,9 @@ h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 1370px;
+    max-width: 1370px;
+    text-align: center;
+
 }
 
 .header__logo-a {}
@@ -95,17 +101,28 @@ h6 {
 
 .header__contact {
     display: flex;
+    align-items: center;
+
 
 }
 
 .location,
 .phone {
+    margin-right: 52px;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 1.13;
 }
 
-.header__vector {}
+@media (max-width: 960px) {
+    .container {
+        max-width: 898px;
+    }
+
+    .header .location {
+        display: none;
+    }
+}
 
 .vector__img {}
 
@@ -130,28 +147,132 @@ h6 {
 }
 
 .main {
-    background-color: aqua;
     margin: 0%;
 }
 
-.hero {}
+.hero {
+    height: 100vh;
+    background: url(../img/bg/fhon.png) no-repeat left top/cover;
+    padding-top: 272px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
 
-.hero__main {}
+.hero__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-.title {}
+.hero__main {
+    flex: 1;
+}
 
-.subtitle {}
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+
+    color: #FFFFFF;
+
+}
+
+.hero .title {
+    margin-bottom: 17px;
+}
+
+.hero__subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.17;
+    /* identical to box height */
+    color: #FFFFFF;
+}
 
 .hero__btns {}
 
-.btn {}
+.hero .btn {
+    margin-right: 20px;
+}
 
-.her0__call-to-action {}
+.btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height */
 
-.advantages {}
+    text-align: center;
 
-.advantage {}
+    color: #FFFFFF;
+    background: none;
+    height: 44px;
 
-.advantage__img {}
 
-.advantage__desc {}
+
+}
+
+.btn.btn__rheme {}
+
+.hero__call-to-action {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.hero__call-to-action span {
+    color:
+        #ED7173;
+
+}
+
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 16px 10px;
+}
+
+.hero__advantage {
+    border: 2px solid #FFFFFF;
+    flex: 0 1 276px;
+    text-align: center;
+}
+
+
+
+.advantage__img {
+    margin-bottom: 14px;
+
+}
+
+.advantage__desc {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+@media (max-widht) {
+    .container {}
+}
