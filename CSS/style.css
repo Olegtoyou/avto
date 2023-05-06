@@ -449,24 +449,106 @@ h6 {
 }
 
 .service__btn {
-    width: 12%;
-    border: 2px solid #FFFFFF;
-    border-radius: 4px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    line-height: 18px;
+    /* identical to box height */
+    
     text-align: center;
+    
+    color: #252525;
+    
+}
 
-    color: #FFFFFF;
-    background: none;
+.service-btn {
     font-family: 'Arial';
     font-style: normal;
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
     /* identical to box height */
-
     text-align: center;
-    border: 2px solid #D4D4D4;
     color: #252525;
+    border: 2px solid #D4D4D4;
+border-radius: 4px;
+padding: 13px 17px;
+}
 
+
+.bonus {
+
+}
+.container {
+}
+.bonus__container {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: url(../img/content/phon3.png) no-repeat center/cover;
+}
+.bonus__title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 54px;
+line-height: 63px;
+text-align: center;
+padding-top: 65px;
+color: #FFFFFF;
+}
+.bonus__subtitle {
+    padding-top: 10px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.bonus__list {
+    display: flex;
+    padding-top: 65px;
+    max-width: 1130px;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.bonus__item {
+    margin-right: 10px;
+    width: 211px;
+    background: #FFFFFF;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-bottom: 30px;
+}
+.bonus__img {
+    padding-top: 53px;
+}
+.bonus-img {
+}
+.bonus__ytxt {
+    padding-top: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+width: 13%;
+color: #252525;
+width: 100%;
 }
